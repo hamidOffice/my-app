@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.hero-section {
+  background: url("../images/hero-image.jpeg");
+  background-size: cover;
+}
