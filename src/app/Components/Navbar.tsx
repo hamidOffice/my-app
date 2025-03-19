@@ -9,7 +9,7 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false)
     return (
         <>
-            <header className='fixed w-full'>
+            <header className='fixed w-full z-40 top-0'>
                 <nav className='bg-white w-full flex justify-between items-center py-5 px-4'>
 
                     <div className='w-[200px] ml-6'>
@@ -33,7 +33,7 @@ const Navbar = () => {
             </header>
 
 
-            <header className={`fixed top-0 left-0 h-full w-1/2 md:w-1/3 bg-[var(--primary)] rounded-md flex flex-col gap-6 justify-center lg:hidden transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
+            <header className={`z-80 fixed top-0 left-0 h-full w-1/2 md:w-1/3 bg-[var(--primary)] rounded-md flex flex-col gap-6 justify-center lg:hidden transition-transform duration-300 ease-in-out ${isOpen ? "translate-x-0" : "-translate-x-full"}`}>
                  <HiMiniXMark className="absolute top-10 right-4   text-white cursor-pointer" size={40} onClick={() => setIsOpen(false)} />
 
                  <Link href={'/'} className="text-xl block text-white hover:bg-white hover:text-[var(--primary)] p-4 transition-all ease-linear">Home</Link>
